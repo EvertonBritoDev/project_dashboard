@@ -1,3 +1,4 @@
+//work here 23 06 2025 15:34
 import styled from 'styled-components'
 import { FormComponentProps } from '@/types'
 import { StyledButton, StyledInput, StyledP } from '@/components'
@@ -19,7 +20,7 @@ function FormComponent(props: FormComponentProps) {
       {buttons.map((buttonProps, index) => (
         <StyledButton key={index} {...buttonProps} />
       ))}
-      {message && (
+      {message && ( //&& if exists message to execute all below
         <StyledP className={message.type === 'error' ? 'error' : 'success'}>
           {message.msg}
         </StyledP>
