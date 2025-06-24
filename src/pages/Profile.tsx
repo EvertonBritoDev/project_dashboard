@@ -1,4 +1,5 @@
-/* eslint-disable react-hooks/exhaustive-deps */
+//work here 24 06 2025 10:27
+// /* eslint-disable react-hooks/exhaustive-deps */
 import { ChangeEvent, useContext, useEffect, useState } from 'react'
 import {
   CardComponent,
@@ -101,7 +102,7 @@ function Profile() {
       handleChange(1, profileData.email)
       handleChange(2, profileData.phone)
     }
-  }, [profileData])
+  }, [handleChange, profileData])
 
   useEffect(() => {
     if (profileUpdateData !== null) {
