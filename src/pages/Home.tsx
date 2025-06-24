@@ -1,3 +1,6 @@
+//work here 24 06 2025 10:26
+//work here 24 06 2025 11:28
+//work here 24 06 2025 11:32
 import {
   AvatarsList,
   CardComponent,
@@ -15,6 +18,7 @@ import { useGet } from '@/hooks'
 
 // MUI
 import Container from '@mui/material/Container'
+
 import Grid from '@mui/material/Grid'
 
 // UTILS
@@ -78,7 +82,7 @@ function Home() {
                   {!highlightsLoading && highlightsData && (
                     <>
                       <StyledH2 className="mb-1">
-                        Total de vendas no mês
+                        Totalizador de vendas no mês
                       </StyledH2>
                       <StyledH3 className="mb-1" size={40} lineheight={40}>
                         {currencyConverter(highlightsData[0].value)}
