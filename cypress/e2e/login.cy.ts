@@ -29,6 +29,6 @@ describe('Login Flow Invalid Credentials', () => {
     cy.get('input[type="email"]').type('invaliduser@example.com')
     cy.get('input[type="password"]').type('@DNCTester999#')
     cy.get('button[type="submit"]').click()
-    cy.contains('Email e/ou senha inválidos.').should('be.visible')
+    cy.contains('Email e/ou senha inválido.').should('be.visible')
   })
 })
